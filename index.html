@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Chitter</title>
+  </head>
+  <body>
+    <div class="conatiner">
+      <h1>Chitter App <small> PostYourPeeps </small></h1>
+      <div class="jumbotron">
+        <h3>Add new Peep</h3>
+        <form id="peepInputForm">
+
+          <div class="form-group">
+            <label for="moodIndicator">Mood Indicator</label>
+            <select id="moodIndicator">
+              <option value="Good!"> Good!</option>
+              <option value="Great!">Great!</option>
+              <option value="Amazing!">Amazing!</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="peepText">Peep</label>
+            <input type="text" class="form-control" id="peepText" placeholder="Peep">
+          </div>
+
+          <button type="submit" class="btn btn-primary" name="PostPeep">Post Peep </button>
+        </form>
+      </div>
+      <div id="listOfPeeps">
+        hi
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,1 +1,30 @@
-{"scripts": { "test": "jasmine" } }
+{
+  "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node spec",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "jasmine-node": "^1.16.2",
+    "pg": "^7.6.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "name": "frontend-api-challenge",
+  "description": "Here are some interactions the API supports. Implement as many as you see fit.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edy1988/frontend-api-challenge.git"
+  },
+  "author": "Edyta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edy1988/frontend-api-challenge/issues"
+  },
+  "homepage": "https://github.com/Edy1988/frontend-api-challenge#readme"
+}
