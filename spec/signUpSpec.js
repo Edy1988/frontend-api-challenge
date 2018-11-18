@@ -8,5 +8,4 @@ describe("SignUp", function(){
     expect(user.email).toEqual("edy@email.com")
     expect(user.password).toEqual("password")
   });
-
 });

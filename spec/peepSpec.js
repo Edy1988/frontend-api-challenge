@@ -6,4 +6,4 @@ describe("Peep", function(){
     expect(peep.username).toEqual("edy");
     expect(peep.text).toEqual("this is a peep");
   })
-})
+});
