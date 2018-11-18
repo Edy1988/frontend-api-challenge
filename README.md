@@ -18,7 +18,7 @@ Here are some interactions the API supports. Implement as many as you see fit.
 ## Setting up the environment
 SET up this postsql database- copy and paste:
 
-CREATE DATABASE chitter; (also create a chitter_test database replica using the same commands)
+CREATE DATABASE chitterjs; (also create a chitterjs_test database replica using the same commands)
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
