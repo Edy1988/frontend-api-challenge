@@ -1,12 +1,11 @@
 const { User } = require('../lib/user')
-const { saveUser } = require('../database')
-const { Client } = require('pg')
+const { saveUser, makeClient } = require('../database')
 
 describe("SignUp", function(){
   var client;
 
   beforeEach(function(done) {
-    client = new Client({ database: 'chitterjs_test' })
+    client = makeClient()
     client.connect()
     client.query('TRUNCATE peeps, users;', [], (err, res) => {
       done()
@@ -34,8 +33,6 @@ describe("SignUp", function(){
 
       client.query('SELECT * FROM users WHERE id = $1;', [id], (err, res) => {
         const dbUser = res.rows[0];
-
-        // console.log(dbUser)
 
         expect(dbUser.name).toBe("edyta")
         expect(dbUser.username).toEqual("edy")
